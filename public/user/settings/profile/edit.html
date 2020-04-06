@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lvmx-express</title>
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-info navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/img/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="" />
+      <Bootstrap></Bootstrap>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">帖子列表</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav" id="nav-right">
+        
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h1 class="mb-5">个人档案</h1>
+    <form action="javascript:;" method="POST">
+      <div class="form-group">
+        <label>Email</label>
+        <input id="my-email"type="text" class="form-control" name="email" value="admin@qq.com" readonly />
+      </div>
+
+      <div class="form-group">
+        <label>Avatar</label>
+        <div>
+          <div class="my-file">
+            <input type="file" id="myfile" onchange="changepic()"/>
+            <img id="myavatar" src="/assets/img/avatar.png" class="img-thumbnail" width="100" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group d-flex justify-content-end">
+        <button class="btn btn-info ml-2" type="reset">Reset</button>
+        <button id="sub-btn" class="btn btn-primary ml-2" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="/assets/js/common.js"></script>
+<script src="/assets/js/user_edit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>登录</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/login.css" />
+</head>
+
+<body class="text-center">
+  <form class="form-signin" action="javascript:;">
+    <img class="mb-4" src="./assets/img/bootstrap-solid.svg" alt="" width="72" height="72" />
+
+    <h1 class="h3 mb-3 font-weight-normal">Sign in</h1>
+
+    <label class="sr-only" for="inputEmail">Nick name</label>
+    <input class="form-control" id="inputName" type="text" placeholder="Nick name" required="" />
+
+    <label class="sr-only" for="inputPassword">Password</label>
+    <input class="form-control" id="inputPassword" type="password" placeholder="Password" required="" />
+
+    <button id= "login-btn" class="btn btn-lg btn-primary btn-block" type="submit">
+      Login
+    </button> <a href="/register.html"  class="btn btn-lg btn-primary btn-block">register</a>
+
+    <p class="mt-5 mb-3 text-muted">© 2019-2020</p>
+  </form>
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script src="/assets/js/login.js"></script>
+</body>
+
+</html>

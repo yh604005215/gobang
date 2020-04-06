@@ -1,0 +1,35 @@
+{
+  "name": "gobang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "docs": "apidoc -i ./routers -o ./public/docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "apidoc": "^0.20.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+
+  "apidoc": {
+    "name": "用户管理",
+    "version": "0.1.0",
+    "description": "apiDoc 用户管理接口文档",
+    "title": "用户管理接口文档",
+    "url" : "https://api.github.com/v1"
+  } 
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{margin: 0; padding: 0;}
+#gobang{border: 1px solid #ccc; background-color: #e19300; display:block; float: left;}  
+#box{
+    height: 580px;
+    width: 800px;
+    margin: 50px auto;
+    border: 5px solid #ccc;
+} 
+.btn-box{
+    float: right;
+    width: 230px;
+}
+button{
+    width: 40px;
+    height: 40px;
+}
+#rival{
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    margin-left: 80px;
+}
+</style>
+<body>
+<div id="box">
+    <canvas id="gobang" width="560px" height="560px">
+
+    </canvas>
+    <div id="rival">
+        <p class="user-name">豪哥牛逼</p>
+        <img src="/assets/img/avatar.png" width="50px" height="50px"></br>
+        <span>胜局9999局</br>败局0局</span>
+    </div>
+    <div class="btn-box">
+        <button id="start">开始</button>
+        <button id="pause">暂停</button>
+        <button id="undo">悔棋</button>
+        <button id="gg">认输</button>
+    </div>
+    
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script src="/assets/js/gobang.js"></script>
+
+</body>
+</html>
